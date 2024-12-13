@@ -15,9 +15,8 @@ fs.createReadStream(path)
     let total = 0;
     for (let i = 0;i < results.length;i++) {
         let left = al[i];
-        let right = ar[i];
-        let diff = Math.abs(left-right);
-        total += diff;
+        let n = ar.filter(r => r===left).length;
+        total+= (n*left);
     }
 
 console.log('total',total);
