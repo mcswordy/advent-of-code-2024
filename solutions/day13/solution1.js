@@ -59,8 +59,4 @@ fs.readFile(path, 'utf8', function(err, data) {
     }
     console.log('totalCost',totalCost);
     
-    // }
-    // let numRows = lines.length;
-    // let numCols = lines[0].length;
-    // console.log('total',total);
   });
